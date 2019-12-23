@@ -3,7 +3,7 @@ import { View, Image, Text, StyleSheet } from "react-native"
 import ApiClient from "../api/ApiClient"
 
 //TODO: Use onImageFetch callback so SearchScreen can update the state
-const ResultsDetail = ({ result, onImageFetch }) => {
+const PokemonView = ({ result, onImageFetch }) => {
   const [item, setItem] = useState(result)
 
   const formatText = text => {
@@ -50,4 +50,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default ResultsDetail
+export default PokemonView

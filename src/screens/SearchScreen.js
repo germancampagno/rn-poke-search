@@ -8,7 +8,7 @@ import {
 import SearchBar from "../components/SearchBar"
 import useResults from "../hooks/useResults"
 import { FlatList } from "react-native-gesture-handler"
-import ResultsDetail from "../components/ResultsDetail"
+import PokemonView from "../components/PokemonView"
 
 const SearchScreen = () => {
   const [term, setTerm] = useState("")
@@ -41,7 +41,7 @@ const SearchScreen = () => {
               data={listToShow}
               keyExtractor={result => result.name}
               renderItem={({ item }) => {
-                return <ResultsDetail result={item} />
+                return <PokemonView result={item} />
               }}
             />
           )}

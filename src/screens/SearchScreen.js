@@ -6,6 +6,7 @@ import { FlatList } from "react-native-gesture-handler"
 import PokemonView from "../components/PokemonView"
 
 //TODO: Implement pagination
+//TODO: Apply UI
 const SearchScreen = () => {
   const [term, setTerm] = useState("")
   const [apiResults, errorMessage, loading] = useResults()

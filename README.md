@@ -17,3 +17,9 @@ Simple app to search Pokemons by name
 - Implement pagination
 - Apply better UI
 - Improve the use of states
+
+## Frameworks used:
+
+- Expo CLI
+- Axios
+- React Navigation

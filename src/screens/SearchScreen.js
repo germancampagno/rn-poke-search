@@ -1,15 +1,11 @@
 import React, { useState } from "react"
-import {
-  Text,
-  StyleSheet,
-  ActivityIndicator,
-  ProgressViewIOS
-} from "react-native"
+import { Text, StyleSheet, ActivityIndicator } from "react-native"
 import SearchBar from "../components/SearchBar"
 import useResults from "../hooks/useResults"
 import { FlatList } from "react-native-gesture-handler"
 import PokemonView from "../components/PokemonView"
 
+//TODO: Implement pagination
 const SearchScreen = () => {
   const [term, setTerm] = useState("")
   const [apiResults, errorMessage, loading] = useResults()

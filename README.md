@@ -1,5 +1,9 @@
 # rn-poke-search
 
+## Overview:
+
+Simple app to search Pokemons by name
+
 ## Instructions:
 
 1.  Clone the repository
@@ -7,10 +11,6 @@
 3.  After installing, run "npm start" to open the React Native bundler
 4.  Install the 'Expo' App on the mobile device
 5.  Open by scanning the QR code from the React Native Bundler
-
-## Overview:
-
-Simple app to search Pokemons by name
 
 ## Pending:
 

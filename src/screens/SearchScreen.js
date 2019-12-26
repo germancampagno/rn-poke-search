@@ -13,6 +13,7 @@ const SearchScreen = () => {
   const [listToShow, setListToShow] = useState([])
 
   const filterList = term => {
+    setTerm(term)
     setListToShow(
       apiResults.filter(result => {
         return result.name.includes(term)
@@ -28,14 +29,13 @@ const SearchScreen = () => {
         <>
           <SearchBar
             term={term}
-            onTermChange={newTerm => setTerm(newTerm)}
-            onTermSubmit={() => filterList(term)}
+            onTermChange={newTerm => filterList(newTerm)}
           ></SearchBar>
           {errorMessage ? (
             <Text style={styles.errorTextStyle}>{errorMessage}</Text>
           ) : (
             <FlatList
-              data={listToShow}
+              data={term === "" ? apiResults : listToShow}
               keyExtractor={result => result.name}
               renderItem={({ item }) => {
                 return <PokemonView result={item} />
